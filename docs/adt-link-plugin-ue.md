@@ -232,7 +232,7 @@ Once you're comfortable with the sample project, you can use the ADT Link plugin
 
 To define your own custom models for your sensors or other twins, follow [this guide](./create-custom-models.md).
 
-To prepare your CAD model for automatic twin placement during setup, follow [this guide](./preparing-cad-models).
+To prepare your CAD model for automatic twin placement during setup, follow [this guide](./preparing-cad-models.md).
 
 ### Connecting to ADT
 
