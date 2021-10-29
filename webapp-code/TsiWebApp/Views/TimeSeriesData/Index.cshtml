@@ -1,0 +1,57 @@
+﻿
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Time Series Insights</title>
+
+    <script src="https://unpkg.com/tsiclient@1.4.14/tsiclient.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/tsiclient@1.4.14/tsiclient.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+    <body style="font-family: 'Segoe UI', sans-serif;">
+        <div id="chart1" class="container" style="width: @ViewData["Width"]; height: @ViewData["Height"];"></div>
+        
+        <script>
+            window.onload = function() {
+                
+                var jsonString = '@ViewData["Data"]';
+                jsonString = jsonString.replace(/&quot;/g, '\"');
+                var data = JSON.parse(jsonString);
+
+                jsonString = '@ViewData["TimeSeriesIds"]';
+                jsonString = jsonString.replace(/&quot;/g, '\"');
+                var timeSeriesIds = JSON.parse(jsonString);
+
+                var tsiClient = new TsiClient();
+
+                var tsqExpressions = [];
+                var colors = ['#0078D7', '#E0349E', '#60B9AE', '#854CC7', '#FFF100', '#258225', '#FF2828'];
+                timeSeriesIds.forEach((timeSeriesId, i) => {
+                    tsqExpressions.push(
+                        new tsiClient.ux.TsqExpression(
+                            {timeSeriesId: [timeSeriesId]},
+                            {@ViewData["VariableName"]: {
+                                kind: '@ViewData["VariableType"]',
+                                value: {tsx: '@ViewData["VariableValue"]'},
+                                aggregation: {tsx: '@ViewData["VariableAggregation"]'}
+                            }},
+                            {from: new Date('@ViewData["From"]'), to: new Date('@ViewData["To"]'), bucketSize: '@ViewData["BucketSize"]'},
+                            {color: colors[i], alias: timeSeriesId}));
+                });
+
+                var transformedData = tsiClient.ux.transformTsqResultsForVisualization(data, tsqExpressions);
+
+                var lineChart = new tsiClient.ux.LineChart(document.getElementById('chart1'));
+                var lineChartOptions = {
+                    theme: '@ViewData["Theme"]',
+                    legend: '@ViewData["Legend"]',
+                    yAxisState: '@ViewData["yAxisState"]',
+                    interpolationFunction: ''
+                };
+                lineChart.render(transformedData, lineChartOptions, tsqExpressions);
+            };
+        </script>
+    </body>
+</html>

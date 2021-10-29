@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Time Series Insights Data App";
+}
+
+<div class="container-fluid">
+    <div class="justify-content-md" style="font-family: Calibri;">
+        <h2 class="display-4">Time Series Insights Data App</h2>
+        <p>
+            To display Time Series Insights data, append the query parameters below to the base URL:
+        </p>
+        <p>
+            <b>sensortype:</b> Allowed values: @ViewData["SensorTypes"]. Mandatory.<br />
+            <b>since:</b> Only return data since this time, as a duration: 1h, 20m, 2h30m. Optional. Default is <b>60m</b>.<br />
+            <b>interval:</b> Time intervals to aggregate the data, in duration format: pt30s, pt5m, pt1h. Optional. Default is <b>5m</b>.<br />
+            <b>yaxis:</b> Whether to display different data streams in the same Y axis. Allowed values: @ViewData["YAxis"]. Optional. Default is <b>stacked</b>.<br />
+            <b>theme:</b> Background theme: light, dark. Optional. Default is <b>dark</b><br />
+            <b>legend:</b> Legend display options: shown, compact, hidden. Optional. Default is <b>hidden</b><br />
+            <b>width:</b> Chart width in pixels. Optional. Default is <b>350</b><br />
+            <b>height:</b> Chart height in pixels. Optional. Default is <b>205</b><br />
+        </p>
+        <p>
+            <b>Example:</b> @ViewData["BaseUrl"]/timeseriesdata?sensortype=temp&since=60m&interval=pt5m&yaxis=stacked
+        </p>    
+    </div>
+</div>

@@ -1,0 +1,54 @@
+name: Build and publish .NET Core Web App zip package
+on:
+  push:
+    paths:
+    - 'webapp-code/**'
+    - '!webapp-code/TsiWebApp/webapp-deploy.zip'
+  workflow_dispatch:
+    inputs:
+      comment:
+        description: "Run comments"
+        required: false
+env:
+  DOTNET_CORE_VERSION: 3.1.x
+  WORKING_DIRECTORY: webapp-code/TsiWebApp
+  PUBLISH_DIRECTORY: webapp-code/TsiWebApp/bin/Publish
+  FLOW_EMAIL: no-reply@microsoft.com
+  FLOW_NAME: "github-actions"
+jobs:
+  build-and-package:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: check current branch
+      run: git rev-parse --abbrev-ref HEAD
+    - name: Build
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+    - name: Restore
+      run: dotnet restore ${{ env.WORKING_DIRECTORY }}
+    - name: Build
+      run: dotnet build /p:DeployOnBuild=true /p:DeployTarget=Package ${{ env.WORKING_DIRECTORY }} --no-restore
+    - name: Publish
+      run: dotnet publish /p:CreatePackageOnPublish=true -o ${{ env.PUBLISH_DIRECTORY }} ${{ env.WORKING_DIRECTORY }}
+    - name: Package
+      shell: pwsh
+      run: Compress-Archive -Path ${{ env.PUBLISH_DIRECTORY }}/*  -DestinationPath ${{ env.WORKING_DIRECTORY }}/webapp-deploy.zip -Update
+    - name: Check for changes
+      run: git status
+    - name: Stage changed files
+      run: git add ${{ env.WORKING_DIRECTORY }}/webapp-deploy.zip
+    - name: Commit changes
+      run: |
+        git config --local user.email ${{ env.FLOW_EMAIL }}
+        git config --local user.name ${{ env.FLOW_NAME }}
+        git commit -m "Adding Function App zip deploy packages"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}

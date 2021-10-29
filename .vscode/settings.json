@@ -1,0 +1,9 @@
+{
+    "cmake.configureOnOpen": false,
+    "azureFunctions.deploySubpath": "functions\\iothubingest/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish",
+    "azureFunctions.projectSubpath": "function-code\\UnrealIoTIngest"
+}

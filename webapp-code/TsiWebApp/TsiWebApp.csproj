@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationInsightsResourceId>/subscriptions/f0cf2edb-86a7-44b6-9c02-9c5fee5c618d/resourceGroups/unreal-adt-app/providers/microsoft.insights/components/tsiwebapp</ApplicationInsightsResourceId>
+    <UserSecretsId>32fc1485-c2ae-44e9-b86f-13cdeb94e0cb</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.18.0" />
+    <PackageReference Include="Microsoft.Azure.Common" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.18" />
+    <PackageReference Include="Microsoft.IdentityModel" Version="7.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.2.9" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.23" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime.Azure" Version="3.3.19" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataPlaneClient\DataPlaneClient.csproj" />
+  </ItemGroup>
+
+</Project>

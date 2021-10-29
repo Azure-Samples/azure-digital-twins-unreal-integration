@@ -1,0 +1,1665 @@
+{
+  "devices": [
+    {
+      "comms": [
+        {
+          "_id": "aae7968e-512e-4d5d-90e2-0e750491dd1e",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 0,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "501c381a-a7c0-463b-9a27-5c131fac376d",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 0,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "template",
+        "deviceId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "mockDeviceName": "hvac",
+        "mockDeviceCloneId": "",
+        "connectionString": "",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "9a3ceb65-b503-4560-b3bc-15e8919626a9",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 0,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "template",
+        "deviceId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "mockDeviceName": "lighting",
+        "mockDeviceCloneId": "",
+        "connectionString": "",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "f2a86a54-3ad8-4e25-a6fc-a32fbe0bcd75",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 0,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "template",
+        "deviceId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "mockDeviceName": "temp",
+        "mockDeviceCloneId": "",
+        "connectionString": "",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "fb5b1952-a7f7-46ef-808e-38da6481dfa7",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 0,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "template",
+        "deviceId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "mockDeviceName": "occupancy",
+        "mockDeviceCloneId": "",
+        "connectionString": "",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "e4a120d1-6741-49b7-a3b2-e6131cd9bb1d",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 55000,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "41d73b69-220a-4efd-98a7-cce20254eee3",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 36000,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "hvacsensor1",
+        "mockDeviceName": "hvacsensor1",
+        "mockDeviceCloneId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=hvacsensor1;SharedAccessKey=J5XZaunU5laHOmnDR3qMpyshBecEc8cOnRSLMw9xrc4=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "hvacsensor1",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "558062af-0d1e-48c6-bb4b-0cc17b6694eb",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 55000,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "36a681a6-d38c-40ee-bc65-bb97ad9dc0d9",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 42000,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "hvacsensor2",
+        "mockDeviceName": "hvacsensor2",
+        "mockDeviceCloneId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=hvacsensor2;SharedAccessKey=EdQcU2TYXmv+H63B/B40U9k79Aidfo9m4DwUBNVfwJM=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "hvacsensor2",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "d0a96f90-83f7-4c69-866c-fd0741ff1446",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 53000,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "20c78d60-2d96-48e4-b8dd-2525a501968d",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 44000,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "hvacsensor3",
+        "mockDeviceName": "hvacsensor3",
+        "mockDeviceCloneId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=hvacsensor3;SharedAccessKey=Xl0x8WP80fYDRaGyyUc6xl5DEKAOx8vQ4zF5FbhYwEk=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "hvacsensor3",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "6fc6b37c-ec36-4e46-9ba4-db96ba5771f7",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 56000,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "0633acef-55eb-4cc1-b7d1-3bf3f78b77cf",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 38000,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "hvacsensor4",
+        "mockDeviceName": "hvacsensor4",
+        "mockDeviceCloneId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=hvacsensor4;SharedAccessKey=QPmxsNitHTNkiEi3PQO0orWzf8yTZ1UlrEGxFVXtQ64=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "hvacsensor4",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "e20698ff-64f7-4888-a679-a02201489d7e",
+          "_type": "property",
+          "name": "airflow",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"airflow\"}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 51000,
+            "include": true,
+            "unit": "secs",
+            "value": "45",
+            "valueMax": "60"
+          }
+        },
+        {
+          "_id": "6276235f-eef4-459f-9824-e8aef91ed576",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 42000,
+            "include": true,
+            "unit": "secs",
+            "value": 30,
+            "valueMax": "45"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "hvacsensor5",
+        "mockDeviceName": "hvacsensor5",
+        "mockDeviceCloneId": "28fe2de2-528a-496d-bc15-1907593fc2ee",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=hvacsensor5;SharedAccessKey=rk6jIi+rUwb9F7OsgYRv7rzw+nvBF9v8IGcI2WG6h0o=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "hvacsensor5",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "612c68c5-a155-4499-a64b-0808e3831d98",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 137000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "lightingsensor1",
+        "mockDeviceName": "lightingsensor1",
+        "mockDeviceCloneId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=lightingsensor1;SharedAccessKey=R9JIfu8PIiYHehy53rQc2gjtZxoYClXKZpUOdMXQHbU=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "lightingsensor1",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "b8b97950-d7a6-468f-999e-5f2bda50aaa5",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 158000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "lightingsensor2",
+        "mockDeviceName": "lightingsensor2",
+        "mockDeviceCloneId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=lightingsensor2;SharedAccessKey=w+/bKdrLVkmnbGpXm7cWTrrM+49L6en44n6ZGLqpnlc=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "lightingsensor2",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "de2ecd82-c473-49c0-b5ef-e21127e40469",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 224000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "lightingsensor3",
+        "mockDeviceName": "lightingsensor3",
+        "mockDeviceCloneId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=lightingsensor3;SharedAccessKey=fnrYngm2HOuQEyFLNfxp4X05GkXf7ZRAXTxM9tJL6qw=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "lightingsensor3",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "e8cdac5d-7f63-45d1-adb9-81ca6446bc52",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 227000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "lightingsensor4",
+        "mockDeviceName": "lightingsensor4",
+        "mockDeviceCloneId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=lightingsensor4;SharedAccessKey=9XKjb30RpLKtQrMgpBo+wS23/+8rHF85iWK5iu5+HSk=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "lightingsensor4",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "212c04b7-3efb-403b-a793-2c34b2b302a0",
+          "_type": "property",
+          "name": "State",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":80}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 225000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "lightingsensor5",
+        "mockDeviceName": "lightingsensor5",
+        "mockDeviceCloneId": "d75cd5f5-a4b4-4d5e-8db9-4d79598ed327",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=lightingsensor5;SharedAccessKey=grGyUiuxE7xjPGQ59TyQGNAMr4Bn7Y8eWX+7OaAJ0Ak=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "lightingsensor5",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "df0824aa-24af-4d2f-873f-0cb120462d17",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 13000,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "tempsensor1",
+        "mockDeviceName": "tempsensor1",
+        "mockDeviceCloneId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=tempsensor1;SharedAccessKey=oN7n09BdnRktqxi0Gy1JzUf6cd5ciFQ6u1sz3ROSKHQ=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "tempsensor1",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "38ad8184-eac1-4c7c-ab7b-2832f3f37231",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 17000,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "tempsensor2",
+        "mockDeviceName": "tempsensor2",
+        "mockDeviceCloneId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=tempsensor2;SharedAccessKey=V2AtFKp7spkmzBTPdJvt5Y6KwnElC0qPGX8+jSENvAw=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "tempsensor2",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "fcae6659-e42e-4997-a714-db1bda78f3cc",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 29000,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "tempsensor3",
+        "mockDeviceName": "tempsensor3",
+        "mockDeviceCloneId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=tempsensor3;SharedAccessKey=yuKPnku3gmWe6ixQHq0rV5CwueWJXrcfOmeg7JQED6Y=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "tempsensor3",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "22a2e6e7-f25b-4204-b1e4-c8e51e04ff8a",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 19000,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "tempsensor4",
+        "mockDeviceName": "tempsensor4",
+        "mockDeviceCloneId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=tempsensor4;SharedAccessKey=JnfOhVX74m0vX3j5i+FUxguw+trkh8d3Vmpu69CP4BY=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "tempsensor4",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "925d59f3-4d2e-4d7c-8361-2723d4c6ebec",
+          "_type": "property",
+          "name": "temperature",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 22000,
+            "include": true,
+            "unit": "secs",
+            "value": "10",
+            "valueMax": "30"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "tempsensor5",
+        "mockDeviceName": "tempsensor5",
+        "mockDeviceCloneId": "3a7a1958-54b8-4e90-8bd3-94f9b7d3a29f",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=tempsensor5;SharedAccessKey=T5xFd2RjEWKdujyZZmzD/x/oDX80buO44hYqcpz67ts=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "hvac"
+      },
+      "_id": "tempsensor5",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "84e02b13-aac3-4bea-9f20-336fca78e0cb",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 188000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "occupancysensor1",
+        "mockDeviceName": "occupancysensor1",
+        "mockDeviceCloneId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=occupancysensor1;SharedAccessKey=j9qRbbh3eEQrScnb3tgt8NxvtOKt01Cr6FFJwFtMaX8=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "occupancysensor1",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "28ad2be2-d3b1-42e8-9a65-dbecb97a15c7",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 208000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "occupancysensor2",
+        "mockDeviceName": "occupancysensor2",
+        "mockDeviceCloneId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=occupancysensor2;SharedAccessKey=A48P9LiWWbvUJ8ci/i9MDLuEz9qbKV5yd2Bq66cDp3s=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "occupancysensor2",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "97a0d0c4-cdbe-4c17-b46d-36aa84833ebf",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 146000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "occupancysensor3",
+        "mockDeviceName": "occupancysensor3",
+        "mockDeviceCloneId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=occupancysensor3;SharedAccessKey=NIMoSMuftkKAGLG8imQM55ZqO/qrGf3HHEJgoC5vXQk=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "occupancysensor3",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "09c8bdfa-42bd-4e87-9e3b-abd978ad997c",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 127000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "occupancysensor4",
+        "mockDeviceName": "occupancysensor4",
+        "mockDeviceCloneId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=occupancysensor4;SharedAccessKey=aBBiDysmJpSHlRtoC5eruG5ABhqcJFrc9dwQeE2uiAM=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "occupancysensor4",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    },
+    {
+      "comms": [
+        {
+          "_id": "747a61c4-03f3-4fd0-9776-611b524f070b",
+          "_type": "property",
+          "name": "IsOccupied",
+          "component": {
+            "enabled": false,
+            "name": "Component"
+          },
+          "color": "#333",
+          "enabled": true,
+          "string": false,
+          "value": "{\"percentOn\":30}",
+          "sdk": "msg",
+          "propertyObject": {
+            "type": "default"
+          },
+          "version": 0,
+          "type": {
+            "mock": false,
+            "direction": "d2c"
+          },
+          "runloop": {
+            "_ms": 138000,
+            "include": true,
+            "unit": "secs",
+            "value": "120",
+            "valueMax": "240"
+          }
+        }
+      ],
+      "configuration": {
+        "_kind": "hub",
+        "deviceId": "occupancysensor5",
+        "mockDeviceName": "occupancysensor5",
+        "mockDeviceCloneId": "16ad821c-eae6-46a7-8bc7-aadb4673ce7c",
+        "connectionString": "HostName=<iothubname>.azure-devices.net;DeviceId=occupancysensor5;SharedAccessKey=5JOZxhryHenEy2wl4opXeUdeaIaCE7mQA+YykhOYE/A=",
+        "scopeId": "",
+        "dpsPayload": "",
+        "sasKey": "",
+        "isMasterKey": false,
+        "capabilityModel": "",
+        "capabilityUrn": "",
+        "plugIn": "smartbinary"
+      },
+      "_id": "occupancysensor5",
+      "plan": {
+        "loop": false,
+        "startup": [],
+        "timeline": [],
+        "random": [],
+        "receive": []
+      }
+    }
+  ],
+  "simulation": {
+    "bulk": {
+      "mode": "random",
+      "random": {
+        "min": 5000,
+        "max": 90000
+      },
+      "batch": {
+        "size": 10,
+        "delay": 5000
+      }
+    },
+    "ranges": {
+      "AUTO_INTEGER": {
+        "min": 1,
+        "max": 5000
+      },
+      "AUTO_DOUBLE": {
+        "min": 1,
+        "max": 5000
+      },
+      "AUTO_LONG": {
+        "min": 1,
+        "max": 5000
+      },
+      "AUTO_FLOAT": {
+        "min": 1,
+        "max": 5000
+      },
+      "AUTO_VECTOR": {
+        "min": 1,
+        "max": 500
+      }
+    },
+    "runloop": {
+      "secs": {
+        "min": 30,
+        "max": 90
+      },
+      "mins": {
+        "min": 5,
+        "max": 60
+      }
+    },
+    "geo": [
+      {
+        "latitude": 51.508009,
+        "longitude": -0.128114,
+        "altitude": 100,
+        "radius": 25000
+      },
+      {
+        "latitude": 47.608013,
+        "longitude": -122.335167,
+        "altitude": 100,
+        "radius": 30000
+      },
+      {
+        "latitude": 39.8952663456671,
+        "longitude": -169.80377348147474,
+        "altitude": 0,
+        "radius": 1500000
+      },
+      {
+        "latitude": 40.736291221818526,
+        "longitude": -74.17785632140426,
+        "altitude": 100,
+        "radius": 20000
+      },
+      {
+        "latitude": 47.37358185559139,
+        "longitude": 8.5511341111357,
+        "altitude": 100,
+        "radius": 90000
+      },
+      {
+        "latitude": 33.533965950364625,
+        "longitude": -43.060207013303,
+        "altitude": 0,
+        "radius": 1500000
+      }
+    ],
+    "colors": {
+      "Default": "#333",
+      "Color1": "#3a1e1e",
+      "Color2": "#383a1e",
+      "Color3": "#3e2e12",
+      "Color4": "#ad3523",
+      "Color5": "#313546",
+      "Color6": "#205375",
+      "Color7": "#4a4646",
+      "Color8": "#774b00",
+      "Color9": "#941d49",
+      "Color10": "#000"
+    },
+    "simulation": {
+      "firmware": 30000,
+      "connect": 5000,
+      "restart": {
+        "min": 8,
+        "max": 16
+      },
+      "sasExpire": 168,
+      "dpsRetires": 10
+    },
+    "commands": {
+      "reboot": "reboot",
+      "firmware": "firmware",
+      "shutdown": "shutdown"
+    },
+    "mocks": {
+      "battery": {
+        "init": 100,
+        "running": 0,
+        "variance": 0.1,
+        "timeToRunning": 60400000
+      },
+      "hotplate": {
+        "init": 0,
+        "running": 275,
+        "variance": 0.1,
+        "timeToRunning": 28800000
+      },
+      "fan": {
+        "init": 0,
+        "variance": 2.5,
+        "running": 2000,
+        "timeToRunning": 1
+      },
+      "random": {
+        "init": 0,
+        "variance": 3
+      }
+    },
+    "plan": {
+      "startDelay": 2000,
+      "timelineDelay": 5000
+    },
+    "snippets": {
+      "DTDLv1": {
+        "value": "DESIRED_VALUE",
+        "ac": 200,
+        "ad": "completed",
+        "av": "DESIRED_VERSION"
+      },
+      "DTDLv2": {
+        "value": "DESIRED_VALUE",
+        "status": "completed",
+        "message": "test message",
+        "statusCode": 200,
+        "desiredVersion": "DESIRED_VERSION"
+      },
+      "Response": {
+        "result": "OK"
+      },
+      "Value": {
+        "value": null
+      },
+      "Empty": {}
+    },
+    "dcm": {
+      "import": {
+        "interfaceAsComponents": false
+      }
+    },
+    "ux": {
+      "device": {
+        "expandPropertyCard": true
+      }
+    }
+  }
+}
