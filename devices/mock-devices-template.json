@@ -27,8 +27,8 @@
             "_ms": 0,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -42,7 +42,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.2}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -56,8 +56,8 @@
             "_ms": 0,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -96,7 +96,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -110,8 +110,8 @@
             "_ms": 0,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -150,7 +150,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.4}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -164,8 +164,8 @@
             "_ms": 0,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "9",
+            "valueMax": "18"
           }
         }
       ],
@@ -204,7 +204,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -218,8 +218,8 @@
             "_ms": 0,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -272,8 +272,8 @@
             "_ms": 55000,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -287,7 +287,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.5}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -301,8 +301,8 @@
             "_ms": 36000,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -356,8 +356,8 @@
             "_ms": 55000,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -371,7 +371,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.2}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -385,8 +385,8 @@
             "_ms": 42000,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -440,8 +440,8 @@
             "_ms": 53000,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -455,7 +455,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.3}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -469,8 +469,8 @@
             "_ms": 44000,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -524,8 +524,8 @@
             "_ms": 56000,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -539,7 +539,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.1}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -553,8 +553,8 @@
             "_ms": 38000,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -608,8 +608,8 @@
             "_ms": 51000,
             "include": true,
             "unit": "secs",
-            "value": "45",
-            "valueMax": "60"
+            "value": "10",
+            "valueMax": "20"
           }
         },
         {
@@ -623,7 +623,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":66,\"max\":74,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.2}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -637,8 +637,8 @@
             "_ms": 42000,
             "include": true,
             "unit": "secs",
-            "value": 30,
-            "valueMax": "45"
+            "value": 8,
+            "valueMax": "16"
           }
         }
       ],
@@ -678,7 +678,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -692,8 +692,8 @@
             "_ms": 137000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -733,7 +733,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -747,8 +747,8 @@
             "_ms": 158000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -788,7 +788,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -802,8 +802,8 @@
             "_ms": 224000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -843,7 +843,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -857,8 +857,8 @@
             "_ms": 227000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -898,7 +898,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":80}",
+          "value": "{\"percentOn\":60}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -912,8 +912,8 @@
             "_ms": 225000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -953,7 +953,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.4}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -967,8 +967,8 @@
             "_ms": 13000,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "9",
+            "valueMax": "18"
           }
         }
       ],
@@ -1008,7 +1008,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.3}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1022,8 +1022,8 @@
             "_ms": 17000,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "18",
+            "valueMax": "24"
           }
         }
       ],
@@ -1063,7 +1063,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.2}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1077,8 +1077,8 @@
             "_ms": 29000,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "12",
+            "valueMax": "22"
           }
         }
       ],
@@ -1118,7 +1118,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.1}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1132,8 +1132,8 @@
             "_ms": 19000,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "14",
+            "valueMax": "18"
           }
         }
       ],
@@ -1173,7 +1173,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"type\":\"temp\",\"min\":68,\"max\":76,\"increment\":0.5}",
+          "value": "{\"type\":\"temp\",\"min\":19,\"max\":27,\"increment\":0.3}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1187,8 +1187,8 @@
             "_ms": 22000,
             "include": true,
             "unit": "secs",
-            "value": "10",
-            "valueMax": "30"
+            "value": "16",
+            "valueMax": "22"
           }
         }
       ],
@@ -1228,7 +1228,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1242,8 +1242,8 @@
             "_ms": 188000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -1283,7 +1283,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1297,8 +1297,8 @@
             "_ms": 208000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -1338,7 +1338,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1352,8 +1352,8 @@
             "_ms": 146000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -1393,7 +1393,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1407,8 +1407,8 @@
             "_ms": 127000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -1448,7 +1448,7 @@
           "color": "#333",
           "enabled": true,
           "string": false,
-          "value": "{\"percentOn\":30}",
+          "value": "{\"percentOn\":50}",
           "sdk": "msg",
           "propertyObject": {
             "type": "default"
@@ -1462,8 +1462,8 @@
             "_ms": 138000,
             "include": true,
             "unit": "secs",
-            "value": "120",
-            "valueMax": "240"
+            "value": "15",
+            "valueMax": "30"
           }
         }
       ],
@@ -1593,7 +1593,7 @@
         "min": 8,
         "max": 16
       },
-      "sasExpire": 168,
+      "sasExpire": 744,
       "dpsRetires": 10
     },
     "commands": {
