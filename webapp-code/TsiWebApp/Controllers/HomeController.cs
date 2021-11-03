@@ -23,6 +23,7 @@ namespace TsiWebApp.Controllers
             ViewData["BaseUrl"] = $"{this.Request.Scheme}://{this.Request.Host}{this.Request.PathBase}";
             ViewData["SensorTypes"] = string.Join(", ", Enum.GetNames(typeof(TimeSeriesInsightsClient.SensorType)));
             ViewData["YAxis"] = string.Join(", ", Enum.GetNames(typeof(TimeSeriesInsightsClient.YAxisState)));
+            ViewData["InterpolationOptions"] = string.Join(", ", Enum.GetNames(typeof(TimeSeriesInsightsClient.InterpolationFunction)));
 
             return View();
         }

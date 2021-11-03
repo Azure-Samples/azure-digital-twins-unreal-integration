@@ -77,6 +77,15 @@ namespace TsiWebApp.Models
         }
 
         /// <summary>
+        /// Interpolation options to use in the chart
+        /// </summary>
+        public enum InterpolationFunction
+        {
+            none,
+            curveStep,
+        }
+
+        /// <summary>
         /// Class constructor
         /// </summary>
         /// <param name="configuration"></param>
