@@ -41,7 +41,7 @@ namespace TsiWebApp.Controllers
             Legend legend = Legend.hidden,
             int width = 350,
             int height = 205,
-            string interpolationFunction = "")
+            string interpolation = "")
         {
             try
             {
@@ -67,7 +67,7 @@ namespace TsiWebApp.Controllers
                 ViewData["Legend"] = legend.ToString();
                 ViewData["Width"] = $"{width}px";
                 ViewData["Height"] = $"{height}px";
-                ViewData["InterpolationFunction"] = interpolationFunction;
+                ViewData["InterpolationFunction"] = interpolation;
 
                 return View();
             }
