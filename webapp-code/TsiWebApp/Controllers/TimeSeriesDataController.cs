@@ -66,6 +66,7 @@ namespace TsiWebApp.Controllers
                 ViewData["Legend"] = legend.ToString();
                 ViewData["Width"] = $"{width}px";
                 ViewData["Height"] = $"{height}px";
+                ViewData["InterpolationFunction"] = "curveStep";
 
                 return View();
             }

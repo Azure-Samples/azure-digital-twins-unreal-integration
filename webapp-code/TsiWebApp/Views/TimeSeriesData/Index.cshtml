@@ -48,7 +48,7 @@
                     theme: '@ViewData["Theme"]',
                     legend: '@ViewData["Legend"]',
                     yAxisState: '@ViewData["yAxisState"]',
-                    interpolationFunction: ''
+                    interpolationFunction: '@ViewData["InterpolationFunction"]'
                 };
                 lineChart.render(transformedData, lineChartOptions, tsqExpressions);
             };
