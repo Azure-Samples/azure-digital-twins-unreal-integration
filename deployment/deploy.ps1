@@ -301,7 +301,7 @@ function New-IoTMockDevices {
 
 function New-Deployment() {
 
-    # Set environment's uniqeu hash
+    # Set environment's unique hash
     Set-EnvironmentHash -hash_length 8
 
     #region greetings
@@ -372,7 +372,9 @@ function New-Deployment() {
     #region AAD
     Write-Host
     Write-Host "Collecting current user information"
-    $script:userId = az ad signed-in-user show --query objectId -o tsv
+    # JH 2022-08-09
+	# https://docs.microsoft.com/en-us/cli/azure/microsoft-graph-migration#breaking-changes
+    $script:userId = az ad signed-in-user show --query id -o tsv
 
     $script:appRegName = "$($script:resource_group_name)-$($script:env_hash)"
 
@@ -393,11 +395,14 @@ function New-Deployment() {
 
     Write-Host
     Write-Host "Creating app registration '$($script:appRegName)' in Azure Active Directory"
+	# JH 2022-08-09
+    # https://docs.microsoft.com/en-us/cli/azure/microsoft-graph-migration#breaking-changes
     $script:appReg = az ad app create `
         --display-name $script:appRegName `
-        --available-to-other-tenants $false `
-        --reply-urls http://localhost `
-        --native-app `
+        --sign-in-audience AzureADMultipleOrgs `
+        --public-client-redirect-uris http://localhost `
+        --web-redirect-uris http://localhost `
+        --is-fallback-public-client $true `
         --required-resource-accesses "@manifest.json" | ConvertFrom-Json
 
     $found = $false
@@ -429,12 +434,14 @@ function New-Deployment() {
     $parameters = Join-Path $root_path "deployment" "azuredeploy.parameters.json"
     $deployment_id = "$($script:project_name)-$($script:env_hash)"
 
+    # JH 2022-08-09
+    # https://docs.microsoft.com/en-us/cli/azure/microsoft-graph-migration#breaking-changes
     $template_parameters = @{
         "unique"                   = @{ "value" = $script:env_hash }
         "userId"                   = @{ "value" = $script:userId }
         "appRegId"                 = @{ "value" = $script:appReg.appId }
         "appRegPassword"           = @{ "value" = $script:appRegSecret.password }
-        "servicePrincipalObjectId" = @{ "value" = $script:service_ppal.objectId }
+        "servicePrincipalObjectId" = @{ "value" = $script:service_ppal.id }
         "tenantId"                 = @{ "value" = $script:appRegSecret.tenant }
         "repoOrgName"              = @{ "value" = "Azure-Samples" }
         "repoName"                 = @{ "value" = "azure-digital-twins-unreal-integration" }
