@@ -82,7 +82,7 @@ function Read-CliExtensionVersion {
         [bool]$auto_update = $true
     )
 
-    $az_version = az version | ConvertFrom-Json -Depth 5
+    $az_version = az version | ConvertFrom-Json
     [version]$extension_version = $az_version.extensions.$name
 
     Write-Host
@@ -259,7 +259,7 @@ function New-IoTMockDevices {
     $iot_hub = az iot hub show -g $resource_group -n $hub_name | ConvertFrom-Json
     $iot_hub_devices = az iot hub device-identity list -g $resource_group -n $hub_name |ConvertFrom-Json
 
-    $mock_devices = Get-Content -Path $template_file | ConvertFrom-Json -Depth 10
+    $mock_devices = Get-Content -Path $template_file | ConvertFrom-Json
     for ($i = 0; $i -lt $mock_devices.devices.Count; $i++) {
         if ($mock_devices.devices[$i].configuration._kind -eq "hub") {
             $device = $iot_hub_devices | Where-Object { $_.deviceId -eq $mock_devices.devices[$i].configuration.deviceId }
@@ -430,8 +430,8 @@ function New-Deployment() {
     #endregion
 
     #region create deployment
-    $template = Join-Path $root_path "deployment" "azuredeploy.bicep"
-    $parameters = Join-Path $root_path "deployment" "azuredeploy.parameters.json"
+    $template = Join-Path $root_path "deployment\azuredeploy.bicep"
+    $parameters = Join-Path $root_path "deployment\azuredeploy.parameters.json"
     $deployment_id = "$($script:project_name)-$($script:env_hash)"
 
     # JH 2022-08-09
@@ -474,11 +474,11 @@ function New-Deployment() {
         --query properties.outputs.webAppUrl.value `
         -o tsv
     Write-Host
-    Write-Host "Rsrouce group deployment completed."
+    Write-Host "Resource group deployment completed."
     #endregion
 
     #region create unreal config file
-    $unreal_file = Join-Path $root_path "output" "unreal-plugin-config.json"
+    $unreal_file = Join-Path $root_path "output\unreal-plugin-config.json"
 
     Write-Host
     Write-Host "Creating unreal config file"
@@ -486,8 +486,8 @@ function New-Deployment() {
     #endregion
 
     #region mock devices config file
-    $devices_template = Join-Path $root_path "devices" "mock-devices-template.json"
-    $devices_file = Join-Path $root_path "output" "mock-devices.json"
+    $devices_template = Join-Path $root_path "devices\mock-devices-template.json"
+    $devices_file = Join-Path $root_path "output\mock-devices.json"
     $script:iot_hub_name = ($important_info | ConvertFrom-Json).iotHubName
 
     New-IoTMockDevices `
