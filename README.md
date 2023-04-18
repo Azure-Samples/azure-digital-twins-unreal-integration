@@ -1,6 +1,6 @@
 # Unreal Engine and Azure Digital Twins integration demo
 
- The ADT Link plugin and this sample content was developed by WSP in collaboration with Microsoft and Epic Games in order to demonstrate how to integrate [Azure Digital Twins (ADT)](https://docs.microsoft.com/en-us/azure/digital-twins/overview) with the [Unreal Engine](https://www.unrealengine.com/). This sample shows you the "backstage" of the downloadable and playable demo hosted [here](https://epicgames.box.com/s/0zumrf4zf5bzdtbe5ck99uppj5rucz2p). If you just want to see a playable sample of the integration, feel free to walk through that demo. If you want to know how it works and recreate it, read on.
+ The ADT Link plugin and this sample content was developed by WSP in collaboration with Microsoft and Epic Games in order to demonstrate how to integrate [Azure Digital Twins (ADT)](https://docs.microsoft.com/en-us/azure/digital-twins/overview) with the [Unreal Engine](https://www.unrealengine.com/).
 
 >NOTE:  We are very interested in your feedback related to this sample.  Whether it is feedback about its usefulness, architecture, or if you find a bug, please let us know by filing a github issue [here](https://github.com/Azure-Samples/azure-digital-twins-unreal-integration/issues)
 
