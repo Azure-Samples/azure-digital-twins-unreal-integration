@@ -19,14 +19,14 @@ jobs:
   build-and-package:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2.8.0
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: check current branch
       run: git rev-parse --abbrev-ref HEAD
     - name: Build
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@871f041373faaad213a635d9afb62905ec029bbb # v1.10.1
       with:
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
     - name: Restore
@@ -48,7 +48,7 @@ jobs:
         git config --local user.name ${{ env.FLOW_NAME }}
         git commit -m "Adding Function App zip deploy packages"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # v1.3.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
